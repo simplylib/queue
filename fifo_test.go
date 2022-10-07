@@ -2,8 +2,8 @@ package queue
 
 import "testing"
 
-func TestQueue(t *testing.T) {
-	q := Queue[int]{}
+func TestFIFO(t *testing.T) {
+	q := FIFO[int]{}
 
 	q.Add(1)
 	q.Add(2)
