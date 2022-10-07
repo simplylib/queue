@@ -19,7 +19,7 @@ steps:
   - name: lint
     image: golangci/golangci-lint:v1.45.0
     commands:
-      - golangci-lint run -v -E gofmt
+      - golangci-lint run -v -E gofmt -D typecheck
     depends_on: [clone]
 
   - name: vet
